@@ -1,0 +1,10 @@
+h1 {
+  color:  $brand-primary;
+}
+.text-big{
+  font-size: 500%;
+  &.red{
+      color: red;
+  }
+
+}

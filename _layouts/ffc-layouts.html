@@ -39,35 +39,7 @@
 }
 </style>
 <body>
-    <header>
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-      </button>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Family Folder Collector
-          </a>
-        </div>
-        <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-        <ul class="nav navbar-nav text-center">
-          <li class="active"><a href="#home">Home</a></li>
-          <li><a href="#survey">FFCคืออะไร</a></li>
-          <li><a href="#report">ใครใช้</a></li>
-          <li><a href="#showe">คุณสมบัติ</a></li>
-          <li><a href="https://suppaluck.github.io/FAQ-ffc">FAQ </a></li>
-          <li><a href="https://suppaluck.github.io/download-ffc.html">ดาวน์โหลด</a></li>
-          <li><a href="https://suppaluck.github.io/contact-ffc.html">ติดต่อ</a></li>
-        </ul>
-      </div>
-    </div>
-
-    </nav>
-        </div>
-    </header>
+    {% include header.html %}
 
     <main>
       <div style="background-color:#d9ffb3; color:#000000;padding:15px;">
@@ -78,23 +50,9 @@
       </div>
     </main>
 
-    <footer>
+    {% include footer.html %}
 
-        <div style="background-color:#000000;; color:white;padding:15px;">
-            <center> <a href=" #">FFCคืออะไร</a> | <a href="#">คำถามที่พบบ่อย</a> | <a href="#">ติดต่อ</a>
-                <br>
-                <p>จำนวนผู้เข้าชมเว็บไซต์</p>
-                </br>
-                <p>ที่อยู่ </p>
 
-                <p> อาคารอุทยานวิทยาศาสตร์ ศูนย์เทคโนโลยีอิเล็กทรอนิกส์และคอมพิวเตอร์แห่งชาติ
-                    <br>112 ถนนพหลโยธิน ตำบลคลองหนึ่ง อำเภอคลองหลวง จังหวัดปทุมธานี 12120
-                    <br>โทรศัพท์ 02-564-6900 โทรสาร 02-564-6901-3 </p>
-        </div>
-
-        </center>
-
-    </footer>
 </body>
 
 </html>
