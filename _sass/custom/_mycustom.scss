@@ -2,9 +2,17 @@ h1 {
   color:  $brand-primary;
 }
 .text-big{
-  font-size: 500%;
+  font-size: 400%;
   &.red{
       color: red;
   }
-
+  &.Pink{
+    color: Pink
+  }
+  &.Orange{
+    color: Orange
+  }
+  &.Yellow{
+    color: Yellow
+  }
 }
