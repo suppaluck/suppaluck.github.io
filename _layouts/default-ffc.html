@@ -3,13 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <title>{{ site.title }}</title>
-    <!---
-	<div id="a" style="position:absolute; width:650; height:680; z-index:9999; left:20%; top:120px;">
-<div style=" background-color:#ccc; width:70px; font-family:Tahoma, Geneva, sans-serif; font-size:14px"><a onClick="document.getElementById('a').style.display = 'none';" style="cursor:pointer">&nbsp;[X] Close</a></div>
- <img src="http://www.bu.ac.th/occasion/prathep_2-Apr-2016/prathep.jpg" width="800" height="499" border="0" align="middle">
- </a>
- </div>
- --->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/bootstrap.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -89,15 +82,16 @@
             }
 
         </style>
-
 </head>
-
 <body>
+
     {% include header.html %}
     <main>
+
         {{ content }}
 
     </main>
+
     {% include footer.html %}
 
 </body>
