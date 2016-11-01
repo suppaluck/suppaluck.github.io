@@ -3,51 +3,99 @@
 <head>
     <meta charset="utf-8" />
     <title>{{ site.title }}</title>
-    <!---
-	<div id="a" style="position:absolute; width:650; height:680; z-index:9999; left:20%; top:120px;">
-<div style=" background-color:#ccc; width:70px; font-family:Tahoma, Geneva, sans-serif; font-size:14px"><a onClick="document.getElementById('a').style.display = 'none';" style="cursor:pointer">&nbsp;[X] Close</a></div>
- <img src="http://www.bu.ac.th/occasion/prathep_2-Apr-2016/prathep.jpg" width="800" height="499" border="0" align="middle">
- </a>
- </div>
- --->
-    <div style="background-color:white;color:white;">
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-#owl-demo-1 .item img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
 
-.item .img-responsive {
-    cursor: url(../img/cross.png),auto;
-}
-.img-rounded {
-    border-radius: 6px;
-}
-</style>
-</div>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .intro-header {
+                height: 120%;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                color: #f8f8f8;
+                background-image: url(../img/bbg.png);
+                background-size: 99.50%;
+                text-align: center;
+                background-color: #34495e;
+            }
+
+            .navbar-inverse {
+                background-color: #ecf0f1;
+            }
+
+            .carousel-inner>.item>img,
+            .carousel-inner>.item>a>img {
+                width: auto;
+                margin: auto;
+            }
+
+            element.style {}
+
+            .content-section-a {
+                padding: 90px 0;
+            }
+
+            .trb-survey-bg {
+                background-position: left bottom;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                background-image: url(../img/UT77.jpg);
+                background-color: #006699;
+            }
+
+            .lead {
+                margin-bottom: 30px;
+                font-family: rsu-light;
+                font-size: 1.2em;
+                line-height: 1.46428571;
+                font-weight: 300;
+            }
+
+            .trb-report-bg {
+                background-image: url(../img/White.jpg);
+            }
+
+            .content-section-b {}
+
+            .trb-showe-bg {
+                background-color: #b8b894;
+            }
+
+            .trb-video-bg {
+                background-color: #d9ffb3;
+            }
+
+            .trb-contact-bg {
+                background-color: #ffff99;
+            }
+
+            td[Attributes Style] {
+                width: 244px;
+                height: 186px;
+                vertical-align: top;
+            }
+
+            user agent stylesheet td,
+            th {
+                display: table-cell;
+                vertical-align: inherit;
+            }
+
+        </style>
 </head>
 <body>
+
     {% include header.html %}
-
     <main>
-      <div style="background-color:#d9ffb3; color:#000000;padding:15px;">
-        <div class="container">
-
-            {{ content }}
-        </div>
-      </div>
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+        {{ content }}
+</div>
+</div>
+</div>
     </main>
 
     {% include footer.html %}

@@ -1,5 +1,5 @@
 ---
-layout: default-ffc
+layout: ffc-layouts
 ---
 # ที่อยู่
 อาคารอุทยานวิทยาศาสตร์
