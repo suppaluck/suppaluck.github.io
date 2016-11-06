@@ -3,8 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <title>{{ site.title }}</title>
-
-
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/css/bootstrap.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -82,7 +80,10 @@
                 display: table-cell;
                 vertical-align: inherit;
             }
-
+            .center {
+                padding: 70px 0;
+                text-align: center;
+}
         </style>
 </head>
 <body>
@@ -92,10 +93,12 @@
 <div class="container">
   <div class="row">
       <div class="col-md-12">
+
         {{ content }}
 </div>
 </div>
 </div>
+
     </main>
 
     {% include footer.html %}
