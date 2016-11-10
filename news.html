@@ -1,10 +1,19 @@
 ---
-layout: default-ffc
+layout: ffc-layouts
 ---
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="center">
+    <div class="row">
+        <section class="all-features featured text-left">
+            {% for post in site.posts %}
+            <div class="col-sm-4">
+            <div class="ffc">
+                      <img class="img-responsive " src="img/news/{{ post.image }}" alt="FFC.com" width="350" height="300">
+                        <a href="{{ post.url }}"><h4>{{ post.title }}</h4></a>
+                        <br>{{ post.date }}<br><p>{{ post.description }}</p>
+
+                    </div>
+                </div>
+                {% endfor %}
+        </section>
+        </div>
+    </div>
