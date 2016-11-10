@@ -1,13 +1,15 @@
 ---
 layout: ffc-layouts
 ---
-<div class="center">
+
     <div class="row">
         <section class="all-features featured text-left">
             {% for post in site.posts %}
-            <div class="col-sm-4 wow fadeInDown text-center animated animated" style="visibility: visible;">
+            <div class="col-sm-4">
             <div class="ffc">
+              <center>
                       <img class="img-responsive " src="img/news/{{ post.image }}" alt="FFC.com" width="350" height="300">
+                   </center>
                         <a href="{{ post.url }}.html"><h4>{{ post.title }}</h4></a>
                         <br>{{ post.date }}<br><p>{{ post.description }}</p>
 
@@ -16,4 +18,4 @@ layout: ffc-layouts
                 {% endfor %}
         </section>
         </div>
-    </div>
+  
