@@ -1,21 +1,23 @@
 ---
 layout: ffc-layouts
 ---
+<div class="news-center">
+    <h1>ข่าวสารและกิจกรรม</h1>
+</div>
+<div class="row">
 
-    <div class="row">
-        <section class="all-features featured text-left">
-            {% for post in site.posts %}
-            <div class="col-sm-4">
-            <div class="ffc">
-              <center>
-                      <img class="img-responsive " src="img/news/{{ post.image }}" alt="FFC.com" width="350" height="300">
-                   </center>
-                        <a href="{{ post.url }}.html"><h4>{{ post.title }}</h4></a>
-                        <br>{{ post.date }}<br><p>{{ post.description }}</p>
-
-                    </div>
+    {% for post in site.posts %}
+    <div class="col-sm-4 news-padding">
+        <a class="news-link"href="{{ post.url }}.html">
+            <div class="news-bg">
+                <img class="news-img" src="img/news/{{ post.image }}" alt="FFC.com">
+                <div class="news-content news-padding">
+                    <h4>{{ post.title }}</h4>
+                    <br>{{ post.date }}
+                <p>  {{ post.description }}</p>
                 </div>
-                {% endfor %}
-        </section>
-        </div>
-  
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>

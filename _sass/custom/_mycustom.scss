@@ -113,7 +113,30 @@ section.featured {
     margin-left: -15px;
 
 }
+.news-img{
+  max-height: 200px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.news-padding{
+  padding: 5px;
 
+}
+.news-content{
+  height: 300px;
+}
+.news-bg{
+  background-color: #E0E0E0;
+}
+.news-center {
+    padding: 30px;
+    text-align: center;
+}
+
+.news-link{
+    text-decoration: none;
+}
 
 .footer {
     text-align: center;
