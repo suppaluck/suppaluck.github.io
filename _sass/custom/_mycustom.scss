@@ -116,14 +116,21 @@ section.featured {
   padding: 5px;
 
 }
+.news1-padding{
+  padding: 2px;
+
+}
 .news-content{
-  height: 300px;
+  height: 200px;
+}
+.news1-content{
+  height: 100px;
 }
 .news-bg{
   background-color: #EEEEEE;
 }
 
-.news-link{
+a:link {
     text-decoration: none;
 }
 .newsh-padding{

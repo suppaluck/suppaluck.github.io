@@ -8,16 +8,20 @@ layout: ffc-layouts
 
     {% for post in site.posts %}
     <div class="col-md-4 news-padding">
-        <a class="news-link"href="{{ post.url }}.html">
+
             <div class="news-bg">
+              <a href="{{ post.url }}.html">
                 <img class="news-img" src="img/news/{{ post.image }}" alt="FFC.com">
-                <div class="news-content news-padding">
+                    <div class="news1-content news1-padding">
                     <h4>{{ post.title }}</h4>
-                    <br>{{ post.date }}
+                  </div>
+                  </a>
+                    <div class="news-content news-padding">
+                    {{ post.date " | remove: "+0700"}}
                 <p>  {{ post.description }}</p>
                 </div>
             </div>
-        </a>
+
     </div>
     {% endfor %}
 </div>
