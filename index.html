@@ -8,7 +8,7 @@ layout: default-ffc
                 <div class="container">
                     <div class="centers">
 
-                        <p class="sansserif">FFCบริการถึงหน้าบ้าน เข้าถึงทุกครอบครัว ใส่ใจสุขภาพในชุมชน</p>
+                        <p class="sansserif">FFC  บริการถึงหน้าบ้าน เข้าถึงทุกครอบครัว ใส่ใจสุขภาพในชุมชน</p>
 
                     </div>
 
@@ -154,66 +154,39 @@ layout: default-ffc
 <!-- /.container -->
 <div class="content-section-a trb-report-bg">
     <div class="container">
-        <div class="row">
-            <center>
-                <h2>ข่าวสารและกิจกรรม</h2>
-                <br>&nbsp;
-            </center>
-            <div class="col-md-4 col-sm-3">
-                <div class="news-bg">
-                    <a href="https://suppaluck.github.io/blog/new2">
-                        <img class="news-img" src="img/news/new1.jpg" alt="FFC.com">
-                        <div class="newsh-content newsh-padding">
-                            <h4>CAT สานฝัน นวัตกรรมสานฝัน ตอนโปรแกรมบันทึกข้อมูลสุขภาพครอบครัว</h4>
 
-                            <h6>2016-02-08 13:33:30</h6>
-                            <p>โปรแกรมบันทึกข้อมูลสุขภาพครอบครัว เราเรียกส้ันๆ ว่า FFC เป็นโปรแกรมที่ทำงานบนระบบปฏิบัติการแอนดรอยด</p>
+          <div class="row">
 
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-3">
+              {% for post in site.posts limit:3 %}
+              <div class="col-md-4 news-padding">
 
-                <div class="news-bg">
-                    <a href="https://suppaluck.github.io/blog/new3">
-                        <img class="news-img" src="img/news/new3.jpg" alt="FFC.com">
-                        <div class="newsh-content newsh-padding">
-                            <h4>Family Folder Collector แอพบันทึกข้อมูลสุขภาพครอบครัว เพื่อพัฒนาสาธารณสุขไทย</h4>
+                      <div class="news-bg">
+                        <a href="{{ post.url }}.html">
+                          <img class="news-img" src="img/news/{{ post.image }}" alt="FFC.com">
+                              <div class="news1-content news1-padding">
+                              <h4>{{ post.title }}</h4>
+                            </div>
+                            </a>
+                              <div class="news-content news-padding">
 
-                            <h6>2014-05-21</h6>
-                            <p>พัฒนาแอพพลิเคชั่นโปรแกรมบันทึกข้อมูลสุขภาพครอบครัวแบบพกพา FFC สำหรับเก็บข้อมูลสุขภาพของผู้ใช้บริการ</p>
-                        </div>
-                    </a>
-                </div>
+                            <p>{{ post.description }}</p>
+                          </div>
+                      </div>
 
-            </div>
-            <div class="col-md-4 col-sm-3">
-                <div class="news-bg">
-                    <a href="https://suppaluck.github.io/blog/new1.html">
-                        <img class="news-img" src="img/news/new2.png" alt="FFC.com">
-                        <div class="newsh-content newsh-padding">
-                            <h4>โปรแกรมบันทึกข้อมูลสุขภาพครอบครัว (FFC Plus)</h4>
-
-                            <h6>2014-05-27</h6>
-                            <p>การใช้งานเทคโนโลยีในพื้นที่สาธารณสุขห่างไกล ด้วยอุปกรณ์พกพา โปรแกรมบันทึกข้อมูลสุขภาพครอบครัว (FFC Plus)</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
+              </div>
+              {% endfor %}
+          </div>
 <div class="news-center">
  <a href="https://suppaluck.github.io/news">
       <button style="font-size:24px">ข่าวเพิ่มเติม <i class="fa fa-hand-o-right"></i></button></a>
     </div>
+  </div>
+</div>
 <div class="content-section-b trb-video-bg">
     <div class="center">
         <div class="row">
-            <div class="col-md-12 wow fadeInLeftBig animated animated" data-animation-delay="200" style="visibility: visible;">
-                <p class="sansserif" style="color:#FFFFFF;">เรามาทำความรู้จัก FFC เพิ่มจากวิดิโอนี้นะคะ </p>
+            <div class="col-md-12">
+                <p class="sansserif" style="color:#FFFFFF;"> เรามาทำความรู้จัก FFC เพิ่มจากวิดิโอนี้นะคะ </p>
 
                 <iframe width="560" height="415" src="https://www.youtube.com/embed/DJceyu3Bg6c" frameborder="0" allowfullscreen></iframe>
 
