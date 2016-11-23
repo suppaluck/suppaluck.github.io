@@ -5,25 +5,35 @@ h1 {
   font-size: 400%;
 }
 .intro-header {
-    height: 600;
-    width: auto;
-    padding-bottom: 50px;
-    background-image: url(../img/g2.png);
-    background-position: center;
+
     background-repeat: no-repeat, repeat;
     text-align: center;
     background-color: #000000;
     color: white;
     text-shadow: 2px 2px 4px #000000;
 }
-
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+div {
+    display: block;
+}
 
 .sansserif {
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .navbar-inverse {
-    background-color: #ecf0f1;
+    background-color: #777;
+    font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 14px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
 }
 
 
@@ -71,7 +81,7 @@ th {
 }
 
 .centers {
-    padding: 400px 0;
+    padding: 200px 0;
     text-align: center;
 }
 .news-center{
@@ -141,13 +151,17 @@ a:link {
   height: 250px;
   width: auto;
 }
+.file{
+  padding: 90px;
+}
 .footer {
     text-align: center;
 }
 
 .footer {
-    background-color: #E0E0E0;
-    color: #212121;
+
+    background-color: #777;
+    color: #ffffff;
     padding: 32px 0;
     font-size: 14px;
 }
