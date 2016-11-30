@@ -4,6 +4,10 @@ h1 {
 .text-big{
   font-size: 400%;
 }
+html {
+  position: relative;
+  min-height: 100%;
+}
 .intro-header {
 
     background-repeat: no-repeat, repeat;
@@ -160,7 +164,7 @@ a:link {
 }
 
 .footer {
-
+    
     background-color: #777;
     color: #ffffff;
     padding: 32px 0;
